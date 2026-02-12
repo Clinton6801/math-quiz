@@ -6,6 +6,16 @@ export default function Landing({ onStart }) {
   return (
     <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-center text-white font-sans">
       <div className="max-w-4xl border-4 border-blue-500 p-10 rounded-3xl bg-slate-800/50 backdrop-blur-md shadow-2xl">
+      
+  <img 
+    src="/logo.jpeg" 
+    alt="School Logo" 
+    className="h-16 w-auto object-contain rounded-lg shadow-lg"
+    onError={(e) => {
+      e.target.style.display = 'none';
+    }}
+  />
+
         <h2 className="text-blue-400 font-bold tracking-widest mb-2 uppercase text-sm md:text-base">
           {QUIZ_CONFIG.SCHOOL_NAME}
         </h2>
