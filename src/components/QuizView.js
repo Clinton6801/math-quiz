@@ -48,7 +48,8 @@ export default function QuizView({ id, onComplete, onBack }) {
       <div className="relative w-full max-w-6xl aspect-[16/9] bg-slate-50 rounded-[2.5rem] overflow-hidden border-8 border-slate-100 shadow-2xl">
         <div className="absolute inset-0 flex items-center justify-center p-8">
           <img 
-            src={`/images/${showSolution ? 'solutions/s' : 'questions/q'}${id}.png`}
+            // Update the image path to include the category folder
+            src={`/images/${category}/${showSolution ? 'solutions/s' : 'questions/q'}${id}.png`}
             alt={showSolution ? "Solution" : "Question"}
             className="max-w-full max-h-full object-contain"
             onError={(e) => {

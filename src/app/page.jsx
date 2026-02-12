@@ -13,6 +13,7 @@ export default function MathopediaPage() {
   const [view, setView] = useState('landing');
   const [selectedId, setSelectedId] = useState(null);
   const [usedQuestions, setUsedQuestions] = useState([]);
+  const [category, setCategory] = useState(null); // 'JSS' or 'SSS'
 
   // Transition to the Grid
   const handleStart = () => setView('grid');
