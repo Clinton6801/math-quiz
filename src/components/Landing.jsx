@@ -24,7 +24,7 @@ export default function Landing({ onStart }) {
         </h3>
         
         <h1 className="text-5xl md:text-8xl font-black mb-4 tracking-tighter text-white">
-          MATHOPEDIA
+          MATHPEDIA
         </h1>
         <p className="text-xl md:text-2xl font-semibold text-blue-200 mb-12">
           {QUIZ_CONFIG.EVENT_TITLE}
