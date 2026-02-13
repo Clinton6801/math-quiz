@@ -61,7 +61,7 @@ export default function MathopediaPage() {
 
       {/* VIEW: CATEGORY SELECTION */}
       {view === 'category' && (
-        <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white">
+        <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white font-sans">
           <h1 className="text-4xl md:text-6xl font-black mb-12 tracking-tight text-blue-400 text-center uppercase">
             Choose Category
           </h1>
@@ -104,7 +104,7 @@ export default function MathopediaPage() {
         <SelectionGrid 
           usedQuestions={usedQuestions[category]} 
           onSelect={handleSelectQuestion}
-          categoryName={category}
+          categoryName={category} 
         />
       )}
 
